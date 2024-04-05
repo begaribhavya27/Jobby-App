@@ -1,0 +1,91 @@
+.nav-header {
+  background-color: #272727;
+  padding: 20px;
+}
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.header-logo {
+  width: 50%;
+}
+.list-sm-container {
+  display: flex;
+  padding: 0px;
+}
+.list-item {
+  list-style-type: none;
+}
+.nav-link {
+  text-decoration: none;
+}
+.icon {
+  color: white;
+  font-size: 25px;
+  margin-right: 20px;
+}
+.nav-items-lg-container {
+  display: none;
+}
+.logout-btn {
+  background-color: #6366f1;
+  padding: 8px;
+  border-style: none;
+  width: 100px;
+  border-radius: 6px;
+  color: white;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 17px;
+}
+.sm-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .logout-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 100%;
+  }
+  .list-sm-container {
+    display: none;
+  }
+  .nav-items-lg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .list-home-jobs {
+    display: flex;
+    padding: 0px;
+  }
+  .lg-list-item {
+    list-style-type: none;
+  }
+  .lg-nav-link {
+    text-decoration: none;
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 40px;
+  }
+}
